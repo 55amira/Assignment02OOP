@@ -1,4 +1,5 @@
 ﻿using Demo.inheritance;
+using Demo.Overriding;
 
 namespace Demo
 {
@@ -44,9 +45,16 @@ namespace Demo
             // child.Fun01();
             // child.Fun02();
 
-            Sum(1, 2);
-            Sum(1.3, 4.3);
-           
+            //Sum(1, 2);
+            //Sum(1.3, 4.3);
+
+            TypeB typeB = new TypeB() { A = 12, B = 13 };
+           //typeB.A = 12;
+           //typeB.B = 13;
+
+            typeB.Fun01();
+            typeB.Fun02();
+
         }
     }
 }
